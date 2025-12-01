@@ -1,0 +1,20 @@
+name: Theme Check CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+
+jobs:
+  theme-check:
+    runs-on: ubuntu-latest
+    name: Theme Check
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Theme Check
+        uses: shopify/theme-check-action@v1
+        with:
+          flags: "--fail-level error"
