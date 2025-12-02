@@ -1,0 +1,1068 @@
+{%- style -%}
+:root {
+  --stark-color-primary: #1A2A4A;
+  --stark-color-secondary: #00B4D8;
+  --stark-color-accent: #FFB703;
+  --stark-bg-light: #F7F9FC;
+  --stark-text-main: #111111;
+  --stark-text-muted: #5A6475;
+  --stark-border-soft: #DDE3EC;
+  --stark-radius-lg: 18px;
+  --stark-radius-xl: 26px;
+  --stark-max-width: 1120px;
+}
+
+/* Limitamos estilos a este bloque */
+#starkline-branding {
+  background: var(--stark-bg-light);
+  color: var(--stark-text-main);
+  padding: 0;
+}
+
+#starkline-branding * {
+  box-sizing: border-box;
+}
+
+#starkline-branding .container {
+  width: 100%;
+  max-width: var(--stark-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* HERO */
+#starkline-branding .hero {
+  padding: 2.8rem 0 2rem;
+}
+
+#starkline-branding .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+#starkline-branding .eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stark-color-secondary);
+  margin-bottom: 0.75rem;
+}
+
+#starkline-branding .hero-title {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(2.1rem, 3vw, 2.7rem);
+  line-height: 1.15;
+  color: var(--stark-color-primary);
+  margin-bottom: 1rem;
+}
+
+#starkline-branding .hero-title .highlight {
+  color: var(--stark-color-secondary);
+}
+
+#starkline-branding .hero-text {
+  color: var(--stark-text-muted);
+  max-width: 34rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.98rem;
+}
+
+#starkline-branding .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+#starkline-branding .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: var(--stark-color-accent);
+  color: #1a1300;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 25px rgba(255, 183, 3, 0.28);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  white-space: nowrap;
+}
+
+#starkline-branding .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(255, 183, 3, 0.35);
+  background: #ffca3a;
+}
+
+#starkline-branding .btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--stark-border-soft);
+  color: var(--stark-color-primary);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+#starkline-branding .btn-ghost:hover {
+  background: #ffffff;
+  border-color: var(--stark-color-secondary);
+  transform: translateY(-1px);
+}
+
+#starkline-branding .hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-size: 0.82rem;
+  color: var(--stark-text-muted);
+}
+
+#starkline-branding .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(221, 227, 236, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#starkline-branding .badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--stark-color-secondary);
+}
+
+/* Hero card derecha */
+#starkline-branding .hero-card {
+  background: #ffffff;
+  border-radius: var(--stark-radius-xl);
+  box-shadow: 0 16px 40px rgba(4, 26, 55, 0.08);
+  padding: 1.8rem 1.6rem;
+  border: 1px solid rgba(221, 227, 236, 0.9);
+}
+
+#starkline-branding .hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(26, 42, 74, 0.04);
+  color: var(--stark-color-primary);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+#starkline-branding .hero-mix {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+#starkline-branding .hero-mix-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  font-size: 0.87rem;
+}
+
+#starkline-branding .hero-mix-block {
+  flex: 1;
+  padding: 0.85rem 0.9rem;
+  border-radius: 16px;
+  background: rgba(247, 249, 252, 0.95);
+  border: 1px solid rgba(221, 227, 236, 0.9);
+}
+
+#starkline-branding .hero-mix-title {
+  font-weight: 600;
+  font-size: 0.86rem;
+  margin-bottom: 0.25rem;
+  color: var(--stark-color-primary);
+}
+
+#starkline-branding .hero-mix-text {
+  color: var(--stark-text-muted);
+  font-size: 0.8rem;
+}
+
+#starkline-branding .hero-divider {
+  height: 1px;
+  background: rgba(221, 227, 236, 0.85);
+  margin: 0.8rem 0;
+}
+
+#starkline-branding .hero-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--stark-text-muted);
+}
+
+#starkline-branding .hero-checks span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#starkline-branding .check-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(0, 180, 216, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--stark-color-secondary);
+}
+
+/* Secciones genéricas */
+#starkline-branding section {
+  padding: 2.2rem 0;
+}
+
+#starkline-branding .section-header {
+  margin-bottom: 1.8rem;
+  max-width: 40rem;
+}
+
+#starkline-branding .section-kicker {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--stark-color-secondary);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+#starkline-branding .section-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 1.5rem;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.35rem;
+}
+
+#starkline-branding .section-subtitle {
+  font-size: 0.95rem;
+  color: var(--stark-text-muted);
+}
+
+/* Esencia */
+#starkline-branding .essence-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 2fr);
+  gap: 1.8rem;
+  align-items: flex-start;
+}
+
+#starkline-branding .essence-card {
+  background: #ffffff;
+  border-radius: var(--stark-radius-lg);
+  border: 1px solid var(--stark-border-soft);
+  padding: 1.2rem 1.3rem;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 30px rgba(4, 26, 55, 0.04);
+}
+
+#starkline-branding .essence-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--stark-color-secondary);
+  margin-bottom: 0.4rem;
+}
+
+#starkline-branding .essence-highlight {
+  font-weight: 600;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.3rem;
+}
+
+#starkline-branding .essence-quote {
+  font-size: 0.9rem;
+  color: var(--stark-text-muted);
+  border-left: 3px solid var(--stark-color-secondary);
+  padding-left: 0.9rem;
+}
+
+#starkline-branding .essence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+}
+
+#starkline-branding .pill {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--stark-border-soft);
+  background: rgba(247, 249, 252, 0.9);
+  color: var(--stark-text-muted);
+}
+
+/* Buyer Personas */
+#starkline-branding .personas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+#starkline-branding .persona-card {
+  background: #ffffff;
+  border-radius: var(--stark-radius-lg);
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid var(--stark-border-soft);
+  font-size: 0.86rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+#starkline-branding .persona-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--stark-color-secondary);
+  font-weight: 600;
+}
+
+#starkline-branding .persona-name {
+  font-weight: 600;
+  color: var(--stark-color-primary);
+}
+
+#starkline-branding .persona-meta {
+  font-size: 0.8rem;
+  color: var(--stark-text-muted);
+}
+
+#starkline-branding .persona-block-title {
+  font-weight: 600;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.1rem;
+  font-size: 0.8rem;
+}
+
+#starkline-branding .persona-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: var(--stark-text-muted);
+  font-size: 0.8rem;
+}
+
+#starkline-branding .persona-list li + li {
+  margin-top: 0.2rem;
+}
+
+/* Personalidad y voz */
+#starkline-branding .split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.7fr);
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+#starkline-branding .card {
+  background: #ffffff;
+  border-radius: var(--stark-radius-lg);
+  border: 1px solid var(--stark-border-soft);
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 10px 30px rgba(4, 26, 55, 0.03);
+  font-size: 0.9rem;
+}
+
+#starkline-branding .card h3 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 1.05rem;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+#starkline-branding .tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.76rem;
+}
+
+#starkline-branding .tag {
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(0, 180, 216, 0.07);
+  color: var(--stark-color-primary);
+  border: 1px solid rgba(0, 180, 216, 0.25);
+}
+
+#starkline-branding .card ul {
+  margin-left: 1.1rem;
+  margin-top: 0.3rem;
+  color: var(--stark-text-muted);
+  font-size: 0.86rem;
+}
+
+#starkline-branding .card ul li + li {
+  margin-top: 0.25rem;
+}
+
+#starkline-branding .example-box {
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(247, 249, 252, 0.9);
+  border: 1px dashed var(--stark-border-soft);
+  font-size: 0.85rem;
+}
+
+#starkline-branding .example-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--stark-color-secondary);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+/* Identidad visual */
+#starkline-branding .identity-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.8fr);
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+#starkline-branding .swatches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+#starkline-branding .swatch {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(221,227,236,0.9);
+  background: #ffffff;
+}
+
+#starkline-branding .swatch-color {
+  height: 52px;
+}
+
+#starkline-branding .swatch-body {
+  padding: 0.4rem 0.6rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+#starkline-branding .swatch-name {
+  font-weight: 600;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.1rem;
+}
+
+#starkline-branding .swatch-hex {
+  font-size: 0.75rem;
+  color: var(--stark-text-muted);
+}
+
+/* Logo demo */
+#starkline-branding .logo-preview {
+  background: #ffffff;
+  border-radius: var(--stark-radius-lg);
+  border: 1px solid var(--stark-border-soft);
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+
+#starkline-branding .logo-preview-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 0.98rem;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#starkline-branding .logo-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+#starkline-branding .logo-header-demo {
+  background: var(--stark-bg-light);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid var(--stark-border-soft);
+}
+
+#starkline-branding .logo-mini-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--stark-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#starkline-branding .logo-mini-mark span {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+#starkline-branding .logo-mini-mark::before {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 3px;
+  background: var(--stark-color-secondary);
+  transform: rotate(-28deg);
+}
+
+#starkline-branding .logo-header-text {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#starkline-branding .logo-header-text span:first-child {
+  color: var(--stark-color-primary);
+}
+
+#starkline-branding .logo-header-text span:last-child {
+  color: var(--stark-color-secondary);
+}
+
+#starkline-branding .logo-header-text .underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.1rem;
+}
+
+#starkline-branding .logo-header-text .underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--stark-color-accent);
+}
+
+#starkline-branding .logo-description {
+  font-size: 0.83rem;
+  color: var(--stark-text-muted);
+  max-width: 18rem;
+}
+
+/* Checklist */
+#starkline-branding .checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  font-size: 0.86rem;
+}
+
+#starkline-branding .checklist-card {
+  background: #ffffff;
+  border-radius: var(--stark-radius-lg);
+  border: 1px solid var(--stark-border-soft);
+  padding: 0.9rem 1rem 1rem;
+}
+
+#starkline-branding .checklist-title {
+  font-weight: 600;
+  color: var(--stark-color-primary);
+  margin-bottom: 0.4rem;
+  font-size: 0.92rem;
+}
+
+#starkline-branding .checklist-card ul {
+  margin-left: 1.1rem;
+  color: var(--stark-text-muted);
+  font-size: 0.84rem;
+}
+
+#starkline-branding .checklist-card ul li + li {
+  margin-top: 0.2rem;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  #starkline-branding .hero-grid,
+  #starkline-branding .essence-grid,
+  #starkline-branding .personas-grid,
+  #starkline-branding .split-grid,
+  #starkline-branding .identity-grid,
+  #starkline-branding .checklist-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #starkline-branding .hero-card {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  #starkline-branding .hero {
+    padding-top: 2rem;
+  }
+
+  #starkline-branding .hero-card {
+    padding: 1.4rem 1.3rem;
+  }
+
+  #starkline-branding .hero-grid {
+    gap: 2rem;
+  }
+}
+{%- endstyle -%}
+
+<div id="starkline-branding">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Branding & estrategia e-commerce</div>
+        <h1 class="hero-title">
+          Starkline: energía precisa para vender
+          <span class="highlight">laboratorio y tendencias</span>.
+        </h1>
+        <p class="hero-text">
+          Marca diseñada para combinar precisión científica con venta por impulso.
+          Productos de laboratorio en México y productos en tendencia, bajo una sola identidad clara, confiable y lista para convertir.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary">Empezar con Starkline</button>
+          <button class="btn-ghost">Ver lineamientos de marca</button>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Branding listo para Shopify
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Nicho laboratorio + tendencia
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Pensado para venta por impulso
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="hero-pill">Mapa de la marca</div>
+        <div class="hero-mix">
+          <div class="hero-mix-row">
+            <div class="hero-mix-block">
+              <div class="hero-mix-title">Productos de laboratorio</div>
+              <p class="hero-mix-text">
+                Catálogo técnico y recurrente para coordinadores de laboratorio, instituciones y estudiantes.
+              </p>
+            </div>
+            <div class="hero-mix-block">
+              <div class="hero-mix-title">Productos en tendencia</div>
+              <p class="hero-mix-text">
+                Gadgets y soluciones virales pensadas para compra rápida e impulsiva.
+              </p>
+            </div>
+          </div>
+          <div class="hero-mix-block">
+            <div class="hero-mix-title">Misión Starkline</div>
+            <p class="hero-mix-text">
+              Comercializar ambos tipos de productos aplicando estrategias de venta por impulso
+              y marketing orientado a conversión, con una experiencia clara y confiable.
+            </p>
+          </div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-checks">
+          <span><span class="check-dot">✓</span>Paleta de marca unificada</span>
+          <span><span class="check-dot">✓</span>Copy orientado a beneficios</span>
+          <span><span class="check-dot">✓</span>Pensado para encabezado de Shopify</span>
+          <span><span class="check-dot">✓</span>Estructura lista para escalar</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ESENCIA -->
+  <section id="esencia">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Esencia de marca</div>
+        <h2 class="section-title">Starkline en una frase</h2>
+        <p class="section-subtitle">
+          Una marca que combina precisión técnica y marketing de alto rendimiento para vender
+          tanto material de laboratorio como productos en tendencia bajo una sola identidad coherente.
+        </p>
+      </div>
+
+      <div class="essence-grid">
+        <div class="essence-card">
+          <div class="essence-label">Fundamentos</div>
+          <p class="essence-highlight">Modelo de negocio</p>
+          <p>
+            E-commerce en Shopify con modelo de dropshipping, centrado en proveedores confiables
+            para laboratorio y productos virales, con foco en conversión y envío a todo México.
+          </p>
+          <p class="essence-highlight" style="margin-top:0.7rem;">Misión</p>
+          <p>
+            Comercializar productos de laboratorio y productos en tendencia aplicando estrategias
+            de venta por impulso y marketing orientado a conversión.
+          </p>
+          <p class="essence-highlight" style="margin-top:0.7rem;">Visión</p>
+          <p>
+            Alcanzar cobertura nacional en México y construir reconocimiento a nivel continental,
+            manteniendo la confianza como eje central.
+          </p>
+        </div>
+
+        <div class="essence-card">
+          <div class="essence-label">Idea central</div>
+          <p class="essence-quote">
+            “Starkline combina precisión técnica y marketing agresivo orientado a conversión.
+            Es fiable para un coordinador de laboratorio y, al mismo tiempo, irresistible para un comprador digital impulsivo.”
+          </p>
+          <div class="essence-tags">
+            <span class="pill">Precisión científica</span>
+            <span class="pill">Venta por impulso</span>
+            <span class="pill">Shopify-ready</span>
+            <span class="pill">Enfoque LATAM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUYER PERSONAS -->
+  <section id="personas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Buyer persona</div>
+        <h2 class="section-title">A quién le habla Starkline</h2>
+        <p class="section-subtitle">
+          Tres perfiles cubren la realidad del proyecto: el coordinador de laboratorio, el estudiante o técnico aspiracional
+          y el comprador digital impulsivo de productos en tendencia.
+        </p>
+      </div>
+
+      <div class="personas-grid">
+        <article class="persona-card">
+          <div class="persona-tag">B2B técnico</div>
+          <div class="persona-name">Coordinador de laboratorio</div>
+          <p class="persona-meta">
+            28–45 años · Universidades, preparatorias técnicas y laboratorios privados.
+          </p>
+          <div>
+            <div class="persona-block-title">Motivación</div>
+            <ul class="persona-list">
+              <li>Laboratorio abastecido sin interrupciones.</li>
+              <li>Equilibrio calidad / precio con proveedores confiables.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Puntos de dolor</div>
+            <ul class="persona-list">
+              <li>Falta de stock real y retrasos en entregas.</li>
+              <li>Facturación complicada y material que no coincide con la ficha.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Contenido clave</div>
+            <ul class="persona-list">
+              <li>Fichas técnicas claras y PDFs descargables.</li>
+              <li>Casos de uso de otros laboratorios en México.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="persona-card">
+          <div class="persona-tag">B2C técnico</div>
+          <div class="persona-name">Estudiante / técnico aspiracional</div>
+          <p class="persona-meta">
+            18–30 años · Carreras de salud, ciencia o técnicos de laboratorio.
+          </p>
+          <div>
+            <div class="persona-block-title">Motivación</div>
+            <ul class="persona-list">
+              <li>Tener material para practicar y verse profesional.</li>
+              <li>Acceder a kits listos sin buscar pieza por pieza.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Puntos de dolor</div>
+            <ul class="persona-list">
+              <li>Proveedores que solo venden a instituciones.</li>
+              <li>Dudas sobre calidad en marketplaces y envíos caros.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Contenido clave</div>
+            <ul class="persona-list">
+              <li>Reels con “un día en el lab” usando tus productos.</li>
+              <li>Promos de “Kit básico para primer semestre”.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="persona-card">
+          <div class="persona-tag">B2C tendencia</div>
+          <div class="persona-name">Comprador digital impulsivo</div>
+          <p class="persona-meta">
+            18–40 años · Usuarios de TikTok, Instagram y Facebook en México.
+          </p>
+          <div>
+            <div class="persona-block-title">Motivación</div>
+            <ul class="persona-list">
+              <li>Resolver pequeños problemas cotidianos con productos “inteligentes”.</li>
+              <li>Sentir que aprovecha una buena oportunidad.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Puntos de dolor</div>
+            <ul class="persona-list">
+              <li>Miedos por malas experiencias con anuncios virales.</li>
+              <li>Desconfianza sobre calidad y garantías.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="persona-block-title">Contenido clave</div>
+            <ul class="persona-list">
+              <li>Videos 10–30 segundos: problema → producto → resultado.</li>
+              <li>Prueba social visible y mensajes de urgencia controlada.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIDAD Y VOZ -->
+  <section id="personalidad">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Personalidad y voz</div>
+        <h2 class="section-title">Cómo habla Starkline</h2>
+        <p class="section-subtitle">
+          Una sola marca con dos matices: técnica y precisa para laboratorio, dinámica y emocional para productos en tendencia,
+          siempre con claridad, honestidad y enfoque en conversión.
+        </p>
+      </div>
+
+      <div class="split-grid">
+        <div class="card">
+          <h3>Personalidad de marca</h3>
+          <div class="tag-row">
+            <span class="tag">Confiable</span>
+            <span class="tag">Experta accesible</span>
+            <span class="tag">Ágil</span>
+            <span class="tag">Curadora</span>
+            <span class="tag">Cercana</span>
+          </div>
+          <ul>
+            <li>Cumple lo que promete, no exagera resultados.</li>
+            <li>Domina lo técnico pero traduce a lenguaje sencillo.</li>
+            <li>Va directa al beneficio y a la acción.</li>
+            <li>Elige productos con utilidad real y potencial de venta rápida.</li>
+            <li>Responde con tono humano y empático en soporte.</li>
+          </ul>
+          <div class="example-box">
+            <div class="example-label">Matiz por nicho</div>
+            <p>
+              En laboratorio, el mensaje es más sobrio y enfocado en calidad, datos y continuidad.
+              En tendencias, el tono es más emocional y orientado a antes/después y comodidad inmediata.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Principios de la voz</h3>
+          <ul>
+            <li><strong>Claridad radical:</strong> frases cortas y directas, sin tecnicismos innecesarios.</li>
+            <li><strong>Beneficio en 3 segundos:</strong> el título responde “¿qué hace por mí?”.</li>
+            <li><strong>Autoridad tranquila:</strong> confianza basada en datos, reseñas y garantías.</li>
+            <li><strong>Creatividad con propósito:</strong> mensajes memorables que impulsan a la acción.</li>
+            <li><strong>Una voz, dos matices:</strong> técnico-preciso y emocional-impulsivo, siempre coherente.</li>
+          </ul>
+          <div class="example-box">
+            <div class="example-label">Ejemplos</div>
+            <p><strong>Laboratorio:</strong> “Puntas de pipeta de alta precisión para prácticas diarias. Encajan sin fugas y reducen errores en tus mediciones.”</p>
+            <p style="margin-top:0.4rem;"><strong>Tendencias:</strong> “Organiza tus cables en 30 segundos. Sin nudos, sin enredos, sin perder tiempo.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTIDAD VISUAL -->
+  <section id="identidad">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Identidad visual</div>
+        <h2 class="section-title">Cómo se ve Starkline</h2>
+        <p class="section-subtitle">
+          Estética minimalista tecnológica, paleta azul-cian-naranja y un logotipo pensado para encabezados de Shopify,
+          favicons e identidad consistente en redes sociales.
+        </p>
+      </div>
+
+      <div class="identity-grid">
+        <div class="card">
+          <h3>Paleta de colores</h3>
+          <p>
+            Azul profundo para confianza científica, cian para tecnología y modernidad, naranja para acción y urgencia,
+            neutros claros para limpieza visual y máxima legibilidad.
+          </p>
+          <div class="swatches">
+            <div class="swatch">
+              <div class="swatch-color" style="background:#1A2A4A;"></div>
+              <div class="swatch-body">
+                <div class="swatch-name">Azul profundo</div>
+                <div class="swatch-hex">#1A2A4A – confianza, precisión</div>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background:#00B4D8;"></div>
+              <div class="swatch-body">
+                <div class="swatch-name">Cian eléctrico</div>
+                <div class="swatch-hex">#00B4D8 – tecnología, innovación</div>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background:#FFB703;"></div>
+              <div class="swatch-body">
+                <div class="swatch-name">Naranja impulso</div>
+                <div class="swatch-hex">#FFB703 – acción, urgencia</div>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background:#F7F9FC;"></div>
+              <div class="swatch-body">
+                <div class="swatch-name">Fondo claro</div>
+                <div class="swatch-hex">#F7F9FC – limpieza, espacio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo-preview">
+          <div class="logo-preview-title">Logotipo e isotipo en contexto</div>
+          <div class="logo-row" style="margin-bottom:1rem;">
+            <div class="logo-header-demo">
+              <div class="logo-mini-mark">
+                <span>S</span>
+              </div>
+              <div class="logo-header-text">
+                <span>STARK</span>
+                <span class="underline">LINE</span>
+              </div>
+            </div>
+            <p class="logo-description">
+              Versión para encabezado: palabra “STARK” en azul profundo, “LINE” en cian y subrayado en naranja que actúa
+              como línea de energía y guía visual hacia la acción.
+            </p>
+          </div>
+          <div class="logo-row">
+            <div class="logo-mini-mark"></div>
+            <p class="logo-description">
+              Isotipo: “S” blanca sobre fondo azul, atravesada por una línea diagonal cian. Ideal para favicon, avatar en redes
+              y puntos de contacto donde no cabe el logotipo completo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section id="checklist">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Implementación</div>
+        <h2 class="section-title">Checklist de branding Starkline</h2>
+        <p class="section-subtitle">
+          Lista de acción para llevar el branding a la tienda Shopify, campañas y materiales internos
+          sin perder coherencia con todo lo definido.
+        </p>
+      </div>
+
+      <div class="checklist-grid">
+        <div class="checklist-card">
+          <div class="checklist-title">Buyer persona</div>
+          <ul>
+            <li>Definir qué buyer será prioridad en el lanzamiento.</li>
+            <li>Ajustar textos de la web para hablarle directamente.</li>
+            <li>Diseñar campañas específicas para cada perfil.</li>
+          </ul>
+        </div>
+        <div class="checklist-card">
+          <div class="checklist-title">Personalidad y voz</div>
+          <ul>
+            <li>Eliminar frases genéricas y reemplazar por pruebas.</li>
+            <li>Aplicar principios de claridad y beneficio en 3 segundos.</li>
+            <li>Crear plantillas de copy para laboratorio y tendencias.</li>
+          </ul>
+        </div>
+        <div class="checklist-card">
+          <div class="checklist-title">Identidad visual</div>
+          <ul>
+            <li>Configurar la paleta en el tema de Shopify.</li>
+            <li>Subir logotipo e isotipo en encabezado y favicon.</li>
+            <li>Diseñar plantillas de redes con la estética definida.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Starkline – Branding page",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Starkline – Branding page"
+    }
+  ]
+}
+{% endschema %}
