@@ -1,4 +1,62 @@
 :root {
+  /* ======================== STARKLINE BRANDING TOKENS ======================== */
+
+  /* Colores */
+  --stl-color-primary: #0055ff;
+  --stl-color-primary-soft: #e5f0ff;
+  --stl-color-secondary: #00c2a8;
+  --stl-color-background: #ffffff;
+  --stl-color-surface: #f5f5f7;
+  --stl-color-text: #111111;
+  --stl-color-text-muted: #6b7280;
+  --stl-color-border: #e5e7eb;
+  --stl-color-success: #16a34a;
+  --stl-color-warning: #f59e0b;
+  --stl-color-danger: #dc2626;
+  --stl-color-focus-ring: #2563eb;
+
+  /* Tipografía - Familias */
+  --stl-font-family-base: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --stl-font-family-heading: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Tipografía - Tamaños */
+  --stl-font-size-xs: 0.75rem;
+  --stl-font-size-sm: 0.875rem;
+  --stl-font-size-md: 1rem;
+  --stl-font-size-lg: 1.125rem;
+  --stl-font-size-xl: 1.5rem;
+
+  /* Tipografía - Pesos */
+  --stl-font-weight-regular: 400;
+  --stl-font-weight-medium: 500;
+  --stl-font-weight-semibold: 600;
+  --stl-font-weight-bold: 700;
+  --stl-line-height-base: 1.5;
+  --stl-line-height-heading: 1.2;
+
+  /* Espaciados */
+  --stl-space-xs: 0.25rem;
+  --stl-space-sm: 0.5rem;
+  --stl-space-md: 1rem;
+  --stl-space-lg: 1.5rem;
+  --stl-space-xl: 2rem;
+
+  /* Bordes */
+  --stl-border-radius-xs: 0.125rem;
+  --stl-border-radius-sm: 0.25rem;
+  --stl-border-radius-md: 0.5rem;
+  --stl-border-radius-lg: 1rem;
+  --stl-border-width-thin: 1px;
+  --stl-border-width-regular: 2px;
+
+  /* Sombras */
+  --stl-shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --stl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.1);
+  --stl-shadow-md: 0 8px 24px rgba(15, 23, 42, 0.18);
+
+  /* ========================================================================= */
+}
+:root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
   --alpha-link: 0.85;
