@@ -489,10 +489,16 @@ h6:empty {
   box-shadow: none;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
-  color: rgb(var(--color-link));
+  color: var(--stl-color-primary);
   background-color: transparent;
   font-size: 1.4rem;
   font-family: inherit;
+  transition: opacity var(--duration-short) ease;
+}
+
+.link:hover,
+.customer a:hover {
+  opacity: 0.8;
 }
 
 .link--text {
@@ -1180,6 +1186,23 @@ deferred-media {
   --color-button-text: var(--color-secondary-button-text);
 }
 
+.button--secondary {
+  background-color: transparent;
+  color: var(--stl-color-primary);
+  border: 1px solid var(--stl-color-primary);
+}
+
+.button--secondary:hover {
+  background-color: var(--stl-color-primary-soft);
+}
+
+.button--tertiary {
+  --color-button: var(--color-secondary-button);
+  --color-button-text: var(--color-secondary-button-text);
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+}
+
 .button--tertiary {
   --alpha-button-background: 0;
   --alpha-button-border: 0.2;
@@ -1220,11 +1243,11 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
+  color: #ffffff;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: var(--stl-color-primary);
 }
 
 .button:before,
@@ -1266,9 +1289,10 @@ button.shopify-payment-button__button--unbranded {
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
+  background-color: var(--stl-color-primary-soft);
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+  rgba(var(--color-button-text), var(--border-opacity)),
+  0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--stl-color-primary), var(--alpha-button-background));
 }
 
 .button--secondary:after {

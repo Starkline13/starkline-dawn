@@ -1451,5 +1451,90 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Starkline – Branding",
+    "settings": [
+      {
+        "type": "color",
+        "id": "stl_color_primary",
+        "label": "Color primario Starkline",
+        "default": "#0055FF"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_primary_soft",
+        "label": "Color primario suave (fondos)",
+        "default": "#E5F0FF"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_secondary",
+        "label": "Color secundario / acento",
+        "default": "#00C2A8"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_background",
+        "label": "Color de fondo general",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_surface",
+        "label": "Color de superficie (tarjetas)",
+        "default": "#F5F5F7"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_text",
+        "label": "Color de texto principal",
+        "default": "#111111"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_text_muted",
+        "label": "Color de texto secundario",
+        "default": "#6B7280"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_border",
+        "label": "Color de bordes",
+        "default": "#E5E7EB"
+      },
+      {
+        "type": "header",
+        "content": "Estados"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_success",
+        "label": "Color de éxito",
+        "default": "#16A34A"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_warning",
+        "label": "Color de aviso",
+        "default": "#F59E0B"
+      },
+      {
+        "type": "color",
+        "id": "stl_color_danger",
+        "label": "Color de error",
+        "default": "#DC2626"
+      },
+      {
+        "type": "header",
+        "content": "Tipografía (opcional)"
+      },
+      {
+        "type": "font_picker",
+        "id": "stl_font_family_base",
+        "label": "Fuente principal (body)",
+        "default": "system-ui"
+      }
+    ]
   }
 ]

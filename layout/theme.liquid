@@ -220,6 +220,23 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
+
+        /* ======================== STARKLINE BRANDING OVERRIDES ======================== */
+        --stl-color-primary: {{ settings.stl_color_primary | default: '#0055ff' }};
+        --stl-color-primary-soft: {{ settings.stl_color_primary_soft | default: '#e5f0ff' }};
+        --stl-color-secondary: {{ settings.stl_color_secondary | default: '#00c2a8' }};
+        --stl-color-background: {{ settings.stl_color_background | default: '#ffffff' }};
+        --stl-color-surface: {{ settings.stl_color_surface | default: '#f5f5f7' }};
+        --stl-color-text: {{ settings.stl_color_text | default: '#111111' }};
+        --stl-color-text-muted: {{ settings.stl_color_text_muted | default: '#6b7280' }};
+        --stl-color-border: {{ settings.stl_color_border | default: '#e5e7eb' }};
+        --stl-color-success: {{ settings.stl_color_success | default: '#16a34a' }};
+        --stl-color-warning: {{ settings.stl_color_warning | default: '#f59e0b' }};
+        --stl-color-danger: {{ settings.stl_color_danger | default: '#dc2626' }};
+        {% if settings.stl_font_family_base != blank %}
+        --stl-font-family-base: {{ settings.stl_font_family_base.family }}, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --stl-font-family-heading: {{ settings.stl_font_family_base.family }}, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        {% endif %}
       }
 
       *,
